@@ -1,0 +1,2 @@
+include ':app','linkedin-sdk'
+rootProject.name = "letgift"

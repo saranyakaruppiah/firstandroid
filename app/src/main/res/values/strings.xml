@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">letgift</string>
+    <string name="hi">Hi, There!</string>
+    <string name="user_name">User Name</string>
+    <string name="Password">Password</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="sign_up">SIGNUP</string>
+    <string name="need_help">NEED HELP?</string>
+    <string name="sign_inwith">Or Sign in with</string>
+    <string name="title_activity_registration">RegistrationActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="account_create">Account Creation</string>
+    <string name="Email">Email</string>
+    <string name="mobile">Mobile</string>
+    <string name="confirm_pw">Confirm Pasword</string>
+    <string name="iama">I am a</string>
+    <string name="man">Man</string>
+    <string name="woman">Woman</string>
+    <string name="other">Others</string>
+    <string name="agree"><![CDATA[I agree to the terms & conditions and the privacy policy]]></string>
+    <string name="sign_upwith">Or Sign up with</string>
+    <string name="alredy">Registered already? Login instead</string>
+    <string name="facebook_app_id">865300697577017</string>
+    <string name="fb_login_protocol_scheme">fb865300697577017</string>
+    <string name="twitter_consumer_key">Du3sKcvdasihwaT9aKbdSffWD</string>
+    <string name="twitter_consumer_secret">pYlpCheIbnxIwUIENz5HtCcJxDFJYCnLQ2tO5TSky3D2Y7FRbW</string>
+
+</resources>

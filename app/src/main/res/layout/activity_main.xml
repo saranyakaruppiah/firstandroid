@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hi"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/ic_launcher_background"
+        android:id="@+id/logoImage"
+        android:layout_marginTop="25dp"
+        android:layout_height="80dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+<!--        <androidx.appcompat.widget.AppCompatEditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="@string/app_name">-->
+
+<!--        </androidx.appcompat.widget.AppCompatEditText>-->
+<!--        <androidx.appcompat.widget.AppCompatEditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="@string/hi">-->
+
+<!--        </androidx.appcompat.widget.AppCompatEditText>-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/user_name"
+            android:inputType="text"
+            android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:passwordToggleEnabled="true">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/Passwords"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Password"
+                android:inputType="textPassword"
+                android:maxLines="1" />
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/remember_me"
+                android:layout_marginTop="10dp"
+
+                android:checked="true">
+
+            </androidx.appcompat.widget.AppCompatCheckBox>
+
+        </com.google.android.material.textfield.TextInputLayout>
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:id="@+id/signin"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:background="@color/colorAccent"-->
+<!--            android:layout_marginEnd="20dp"-->
+<!--            android:layout_marginTop="40dp"-->
+<!--            android:text="@string/sign_in"string/>-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signin"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/white"
+            android:elevation="10dp"
+            android:background="@drawable/rounded_button"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/sign_in">
+
+        </androidx.appcompat.widget.AppCompatButton>
+        <com.twitter.sdk.android.core.identity.TwitterLoginButton
+            android:id="@+id/twitter_login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/need_help"
+                android:textStyle="bold"
+                android:layout_weight="0.5"
+                android:layout_marginStart="20dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="40dp"
+                android:text="@string/need_help">
+            </androidx.appcompat.widget.AppCompatTextView>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:id="@+id/signup"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:elevation="10dp"
+                android:layout_marginBottom="30dp"
+
+                android:background="@drawable/signup_rounded_button"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="40dp"
+                android:text="@string/sign_up">
+            </androidx.appcompat.widget.AppCompatButton>
+
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_inwith"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:textColor="@color/black"
+            ></androidx.appcompat.widget.AppCompatTextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/facebook"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                android:layout_weight="0.3"
+                android:src="@drawable/ic_facebook">
+
+            </androidx.appcompat.widget.AppCompatImageView>
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/google"
+
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                android:layout_weight="0.3"
+                android:src="@drawable/ic_google"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/twitter"
+
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                android:layout_weight="0.3"
+                android:src="@drawable/ic_twitter"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/linkedin"
+
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                android:layout_weight="0.3"
+                android:src="@drawable/ic_linkedin">
+
+            </androidx.appcompat.widget.AppCompatImageView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        app:boxStrokeColor="@color/black"-->
+<!--        app:boxStrokeWidth="1dp"-->
+<!--        android:textColorHint="@color/black"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--        android:hint="Email">-->
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:drawableLeft="@drawable/ic_mail"-->
+<!--            android:drawablePadding="10dp"-->
+<!--            android:textSize="16sp"-->
+<!--            android:id="@+id/email"/>-->
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+<!--    <androidx.appcompat.widget.AppCompatEditText-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        app:boxStrokeColor="@color/black"-->
+<!--        app:boxStrokeWidth="1dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColorHint="@color/black"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:passwordToggleEnabled="true"-->
+<!--        app:passwordToggleDrawable="@drawable/pasword_toggle"-->
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--        android:hint="Password">-->
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:drawableLeft="@drawable/ic_lock"-->
+<!--            android:drawablePadding="10dp"-->
+<!--            android:textSize="16sp"-->
+<!--            android:inputType="textPassword"-->
+<!--            android:id="@+id/password"/>-->
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:id="@+id/login"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:text="Login"/>-->
+<!--    <androidx.appcompat.widget.AppCompatTextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center"-->
+<!--        android:textSize="20sp"-->
+<!--        android:id="@+id/register"-->
+<!--        android:textStyle="bold"-->
+<!--        android:onClick="registerPage"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:text="@string/register"/>-->
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

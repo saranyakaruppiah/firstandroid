@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1074814697364",
+    "firebase_url": "https://letgift-506ba.firebaseio.com",
+    "project_id": "letgift-506ba",
+    "storage_bucket": "letgift-506ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1074814697364:android:dfc4ffc91bae1252e71981",
+        "android_client_info": {
+          "package_name": "com.example.letgift"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1074814697364-fvu96ejqnccp3b7is1ptk5jhuacvr0so.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.letgift",
+            "certificate_hash": "fe0c0ea3c2e1c937a5272ba90a2491f3514e26ff"
+          }
+        },
+        {
+          "client_id": "1074814697364-nc4h9kdu95rr0lh2tntcq60370rga1qe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-Ld6momDneJqjtG8E8ZZQi5By5PTjAps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1074814697364-nc4h9kdu95rr0lh2tntcq60370rga1qe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
